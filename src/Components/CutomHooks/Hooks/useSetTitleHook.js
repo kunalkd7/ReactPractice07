@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 export function useSetTitleHook(count) {
-    useEffect(() => {
+  return useEffect(() => {
         document.title = `title ${count}`
     }, [count])
 }
